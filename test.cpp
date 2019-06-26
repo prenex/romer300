@@ -22,6 +22,7 @@ static void simulate();
 // /////////////////////// //
 // BLOB & POINTER HANDLING //
 // /////////////////////// //
+// and other hacky stuff...//
 
 // TODO: Check if there are longer-than 5-digit addresses ( I guess there is some)
 unsigned int ptrz[100000];
@@ -34,6 +35,8 @@ void* blob(const char* key) {
 	// TODO: implement!
 	return nullptr;
 }
+
+const GLfloat fogfv_0_1_0_0[4] = {0, 1, 0, 0};
 
 // /////////// //
 // BOILERPLATE //
@@ -190,7 +193,7 @@ static void simulate() {
 	glFogf(GL_FOG_END, 0.5);
 	glFogi(GL_FOG_MODE, GL_LINEAR);
 	glHint(GL_FOG_HINT, GL_NICEST);
-	glFogfv(GL_FOG_COLOR, {0, 1, 0, 0});
+	glFogfv(GL_FOG_COLOR, fogfv_0_1_0_0);
 	glGenProgramsARB(1, &(ptrz[2]));
 	glBindProgramARB(GL_FRAGMENT_PROGRAM_ARB, 2);
 	glProgramStringARB(GL_FRAGMENT_PROGRAM_ARB, GL_PROGRAM_FORMAT_ASCII_ARB, 78, "!!ARBfp1.0\nOPTION ARB_fog_linear;\nMOV result.color, {1.0, 0.0, 0.0, 0.0};\nEND\n");
@@ -3443,7 +3446,7 @@ static void simulate() {
 	glFogf(GL_FOG_END, 0.5);
 	glFogi(GL_FOG_MODE, GL_LINEAR);
 	glHint(GL_FOG_HINT, GL_NICEST);
-	glFogfv(GL_FOG_COLOR, {0, 1, 0, 0});
+	glFogfv(GL_FOG_COLOR, fogfv_0_1_0_0);
 	glGenProgramsARB(1, &(ptrz[2]));
 	glBindProgramARB(GL_FRAGMENT_PROGRAM_ARB, 2);
 	glProgramStringARB(GL_FRAGMENT_PROGRAM_ARB, GL_PROGRAM_FORMAT_ASCII_ARB, 78, "!!ARBfp1.0\nOPTION ARB_fog_linear;\nMOV result.color, {1.0, 0.0, 0.0, 0.0};\nEND\n");
@@ -6863,7 +6866,7 @@ static void simulate() {
 	glFogf(GL_FOG_END, 0.5);
 	glFogi(GL_FOG_MODE, GL_LINEAR);
 	glHint(GL_FOG_HINT, GL_NICEST);
-	glFogfv(GL_FOG_COLOR, {0, 1, 0, 0});
+	glFogfv(GL_FOG_COLOR, fogfv_0_1_0_0);
 	glGenProgramsARB(1, &(ptrz[2]));
 	glBindProgramARB(GL_FRAGMENT_PROGRAM_ARB, 2);
 	glProgramStringARB(GL_FRAGMENT_PROGRAM_ARB, GL_PROGRAM_FORMAT_ASCII_ARB, 78, "!!ARBfp1.0\nOPTION ARB_fog_linear;\nMOV result.color, {1.0, 0.0, 0.0, 0.0};\nEND\n");
@@ -10138,7 +10141,7 @@ static void simulate() {
 	glFogf(GL_FOG_END, 0.5);
 	glFogi(GL_FOG_MODE, GL_LINEAR);
 	glHint(GL_FOG_HINT, GL_NICEST);
-	glFogfv(GL_FOG_COLOR, {0, 1, 0, 0});
+	glFogfv(GL_FOG_COLOR, fogfv_0_1_0_0);
 	glGenProgramsARB(1, &(ptrz[2]));
 	glBindProgramARB(GL_FRAGMENT_PROGRAM_ARB, 2);
 	glProgramStringARB(GL_FRAGMENT_PROGRAM_ARB, GL_PROGRAM_FORMAT_ASCII_ARB, 78, "!!ARBfp1.0\nOPTION ARB_fog_linear;\nMOV result.color, {1.0, 0.0, 0.0, 0.0};\nEND\n");
@@ -14707,7 +14710,7 @@ static void simulate() {
 	glFogf(GL_FOG_END, 0.5);
 	glFogi(GL_FOG_MODE, GL_LINEAR);
 	glHint(GL_FOG_HINT, GL_NICEST);
-	glFogfv(GL_FOG_COLOR, {0, 1, 0, 0});
+	glFogfv(GL_FOG_COLOR, fogfv_0_1_0_0);
 	glGenProgramsARB(1, &(ptrz[2]));
 	glBindProgramARB(GL_FRAGMENT_PROGRAM_ARB, 2);
 	glProgramStringARB(GL_FRAGMENT_PROGRAM_ARB, GL_PROGRAM_FORMAT_ASCII_ARB, 78, "!!ARBfp1.0\nOPTION ARB_fog_linear;\nMOV result.color, {1.0, 0.0, 0.0, 0.0};\nEND\n");
@@ -17960,7 +17963,7 @@ static void simulate() {
 	glFogf(GL_FOG_END, 0.5);
 	glFogi(GL_FOG_MODE, GL_LINEAR);
 	glHint(GL_FOG_HINT, GL_NICEST);
-	glFogfv(GL_FOG_COLOR, {0, 1, 0, 0});
+	glFogfv(GL_FOG_COLOR, fogfv_0_1_0_0);
 	glGenProgramsARB(1, &(ptrz[2]));
 	glBindProgramARB(GL_FRAGMENT_PROGRAM_ARB, 2);
 	glProgramStringARB(GL_FRAGMENT_PROGRAM_ARB, GL_PROGRAM_FORMAT_ASCII_ARB, 78, "!!ARBfp1.0\nOPTION ARB_fog_linear;\nMOV result.color, {1.0, 0.0, 0.0, 0.0};\nEND\n");
@@ -21413,7 +21416,7 @@ static void simulate() {
 	glFogf(GL_FOG_END, 0.5);
 	glFogi(GL_FOG_MODE, GL_LINEAR);
 	glHint(GL_FOG_HINT, GL_NICEST);
-	glFogfv(GL_FOG_COLOR, {0, 1, 0, 0});
+	glFogfv(GL_FOG_COLOR, fogfv_0_1_0_0);
 	glGenProgramsARB(1, &(ptrz[2]));
 	glBindProgramARB(GL_FRAGMENT_PROGRAM_ARB, 2);
 	glProgramStringARB(GL_FRAGMENT_PROGRAM_ARB, GL_PROGRAM_FORMAT_ASCII_ARB, 78, "!!ARBfp1.0\nOPTION ARB_fog_linear;\nMOV result.color, {1.0, 0.0, 0.0, 0.0};\nEND\n");
@@ -24666,7 +24669,7 @@ static void simulate() {
 	glFogf(GL_FOG_END, 0.5);
 	glFogi(GL_FOG_MODE, GL_LINEAR);
 	glHint(GL_FOG_HINT, GL_NICEST);
-	glFogfv(GL_FOG_COLOR, {0, 1, 0, 0});
+	glFogfv(GL_FOG_COLOR, fogfv_0_1_0_0);
 	glGenProgramsARB(1, &(ptrz[2]));
 	glBindProgramARB(GL_FRAGMENT_PROGRAM_ARB, 2);
 	glProgramStringARB(GL_FRAGMENT_PROGRAM_ARB, GL_PROGRAM_FORMAT_ASCII_ARB, 78, "!!ARBfp1.0\nOPTION ARB_fog_linear;\nMOV result.color, {1.0, 0.0, 0.0, 0.0};\nEND\n");
@@ -29905,7 +29908,7 @@ static void simulate() {
 	glFogf(GL_FOG_END, 0.5);
 	glFogi(GL_FOG_MODE, GL_LINEAR);
 	glHint(GL_FOG_HINT, GL_NICEST);
-	glFogfv(GL_FOG_COLOR, {0, 1, 0, 0});
+	glFogfv(GL_FOG_COLOR, fogfv_0_1_0_0);
 	glGenProgramsARB(1, &(ptrz[2]));
 	glBindProgramARB(GL_FRAGMENT_PROGRAM_ARB, 2);
 	glProgramStringARB(GL_FRAGMENT_PROGRAM_ARB, GL_PROGRAM_FORMAT_ASCII_ARB, 78, "!!ARBfp1.0\nOPTION ARB_fog_linear;\nMOV result.color, {1.0, 0.0, 0.0, 0.0};\nEND\n");
