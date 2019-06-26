@@ -48,6 +48,13 @@ static void init() {
 	simulate();
 }
 
+static void usage(void)
+{
+	printf("Usage:\n");
+	printf("	-display <displayname>	set the display to run on\n");
+	printf("	-info					 display OpenGL renderer info\n");
+}
+
 int main(int argc, char *argv[]) {
 	char *dpyName = NULL;
 	GLboolean printInfo = GL_FALSE;
