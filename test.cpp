@@ -19,6 +19,26 @@
 /** See later: grabbed frames from apitrace */
 static void simulate();
 
+// /////////////////////// //
+// BLOB & POINTER HANDLING //
+// /////////////////////// //
+
+// TODO: Check if there are longer-than 5-digit addresses ( I guess there is some)
+unsigned int ptrz[100000];
+
+void initBlobs() {
+	// TODO: implement
+}
+
+void* blob(const char* key) {
+	// TODO: implement!
+	return nullptr;
+}
+
+// /////////// //
+// BOILERPLATE //
+// /////////// //
+
 /** Simple single-threaded main loop */
 static int drawUpdate(int redraw_hint) {
 	gametime gt = gametime::mainloop_get_current();
@@ -74,6 +94,8 @@ int main(int argc, char *argv[]) {
 		 return -1;
 		}
 	}
+
+	initBlobs();
 
 	/* TODO: handle keyevents or idle or remove/disable reshape */
 	retval = gles2run(init, drawUpdate, reshape, NULL, NULL, "GLES2-helper test code for rtw r300 glitch testing", 640, 480, GL_TRUE, NULL);
